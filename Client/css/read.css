@@ -1,0 +1,59 @@
+.inner-content {
+    display: flex;
+}
+
+.inner-content .read {
+    width: 75%;
+    border: 0.1px solid #ccc;
+    float: left;
+    background: #fff;
+    padding: 15px;
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.inner-content .read .number-chapter {
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-header);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inner-content .list-type-novel {
+    width: 25%;
+}
+
+/* MỚI THÊM  */
+
+.inner-content .nav-chapter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.inner-content .nav-chapter .return,
+.inner-content .nav-chapter .next,
+.inner-content .nav-chapter .list-chapter {
+    padding: 6px 12px;
+    background-color: var(--color-header);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.inner-content .nav-chapter .list-chapter {
+    background-color: var(--bg-two);
+
+}
+.fa-left-long {
+    margin-right: 5px;
+}
+
+.fa-right-long {
+    margin-left: 5px;
+}
+/* MỚI THÊM  */

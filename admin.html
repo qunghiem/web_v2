@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="admin_v1/assets/css/reset.css">
+    <link rel="stylesheet" href="admin_v1/assets/css/base.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="admin_v1/assets/css/index.css">
+
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="manager">
+            <div class="hello-admin">
+                <h1>Xin chào, Admin</h1>
+                <img src="admin_v1/assets/images/admin (1).png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="">
+                        <i class="fa-solid fa-house"></i>
+                        Trang chủ
+                    </a></li>
+                <li><a href="">
+                        <i class="fa-solid fa-newspaper"></i>
+                        Tin tức</a></li>
+                <li><a href="">
+                        <i class="fa-solid fa-at"></i>
+                        Tác giả</a></li>
+                <li><a href="">
+                        <i class="fa-solid fa-question"></i>
+                        FAQ</a></li>
+                <li><a href="">
+                        <i class="fa-solid fa-address-book"></i>
+                        Liên hệ</a></li>
+            </ul>
+            <div class="log_out">
+                <a href="">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Đăng xuất</span>
+                </a>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="header">
+                <div class="logo">
+                    <i class="fa-solid fa-bars"></i>
+                    <h1>DASHBOARD</h1>
+                </div>
+                <ul class="modul">
+
+                    <li class="notification">
+                        <a href="">
+                            <i class="fa-solid fa-bell"></i>
+                            <span>Thông báo</span>
+                        </a>
+                    </li>
+                    <li class="setting">
+                        <a href="">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Cài đặt</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="list-more">
+                    <h2>Danh sách truyện</h2>
+                    <div class="del-more">
+                        <button class="delete">XÓA</button>
+                        <button class="more">
+                            <a href="" target="" id="openWindow">THÊM TRUYỆN</a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>ẢNH</th>
+                            <th>TÊN TRUYỆN</th>
+                            <th>TÁC GIẢ</th>
+                            <th>XÓA</th>
+                            <th>LƯU</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="admin_v1/assets/images/test.jpeg" class="image-preview" alt="Preview Image">
+                                <input type="file" class="image-upload" accept="image/*">
+                            </td>
+                            <!-- <input type="file" id="fileInput" style="display: none;" accept="image/*"> -->
+                            <td class="editableContent">Trong Ánh Chiều Tà</td>
+                            <td class="editableContent">Mạt Trà Khúc Kỳ</td>
+                            <td>
+                                <input type="checkbox" name="" id="">
+                            </td>
+                            <td>
+                                <a href="">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="admin_v1/assets/images/test.jpeg" class="image-preview" alt="Preview Image">
+                                <input type="file" class="image-upload" accept="image/*">
+                            </td>
+                            <!-- <input type="file" id="fileInput" style="display: none;" accept="image/*"> -->
+                            <td class="editableContent">Trong Ánh Chiều Tà</td>
+                            <td class="editableContent">Mạt Trà Khúc Kỳ</td>
+                            <td>
+                                <input type="checkbox" name="" id="">
+                            </td>
+                            <td>
+                                <a href="">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="admin_v1/assets/images/test.jpeg" class="image-preview" alt="Preview Image">
+                                <input type="file" class="image-upload" accept="image/*">
+                            </td>
+                            <!-- <input type="file" id="fileInput" style="display: none;" accept="image/*"> -->
+                            <td class="editableContent">Trong Ánh Chiều Tà</td>
+                            <td class="editableContent">Mạt Trà Khúc Kỳ</td>
+                            <td>
+                                <input type="checkbox" name="" id="">
+                            </td>
+                            <td>
+                                <a href="">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="admin_v1/assets/images/test.jpeg" class="image-preview" alt="Preview Image">
+                                <input type="file" class="image-upload" accept="image/*">
+                            </td>
+                            <!-- <input type="file" id="fileInput" style="display: none;" accept="image/*"> -->
+                            <td class="editableContent">Trong Ánh Chiều Tà</td>
+                            <td class="editableContent">Mạt Trà Khúc Kỳ</td>
+                            <td>
+                                <input type="checkbox" name="" id="">
+                            </td>
+                            <td>
+                                <a href="">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="admin_v1/assets/images/test.jpeg" class="image-preview" alt="Preview Image">
+                                <input type="file" class="image-upload" accept="image/*">
+                            </td>
+                            <!-- <input type="file" id="fileInput" style="display: none;" accept="image/*"> -->
+                            <td class="editableContent">Trong Ánh Chiều Tà</td>
+                            <td class="editableContent">Mạt Trà Khúc Kỳ</td>
+                            <td>
+                                <input type="checkbox" name="" id="">
+                            </td>
+                            <td>
+                                <a href="">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <!-- Thêm các hàng khác nếu cần -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="admin_v1/js/edit.js"></script>
+
+</html>
