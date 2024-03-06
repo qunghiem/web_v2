@@ -1,32 +1,8 @@
-import { getQueryParams } from "./Const.js";
+import { IncreaseView, getQueryParams } from "./Const.js";
 const URL="http://54.254.135.110"
 
-async function IncreaseView(novelCode) {
-  try {
-    const response = await fetch(
-      `${URL}/novels/increase-view`,
-      {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          novelCode: novelCode,
-        }),
-      }
-    );
 
-    if (!response.ok) {
-      throw new Error("Failed to increase view count");
-    }
-
-    console.log("Increase view success");
-  } catch (error) {
-    console.error("Error increasing view count:", error);
-    throw error;
-  }
-}
-
+const novelName=getQueryParams().name;
 async function fetchDataAndRender() {
   const item = getQueryParams();
   try {
