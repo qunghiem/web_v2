@@ -13,7 +13,7 @@ const renderListNovel = (queryRequest = "") => {
     .then((data) => {
       let htmls = data.map((item) => {
         return `
-          <div class="novel__item" onclick="location.href='./detail.html?id=${item._id.toString()}&name=${
+          <div class="novel__item col-md-3 col-12" onclick="location.href='./detail.html?id=${item._id.toString()}&name=${
           item.novelName
         }&author=${item.authorName}&status=${item.status}&view=${
           item.view
@@ -25,6 +25,7 @@ const renderListNovel = (queryRequest = "") => {
             }" width="176px" height="250" allow="autoplay" title="${
           item.novelName
         }" overflow="hidden"></img>
+            <div class="novel-right">
             <div class="novel__title">
               <a><h3 id="h3">${item.novelName}</h3></a>
             </div>
@@ -35,6 +36,7 @@ const renderListNovel = (queryRequest = "") => {
               <div class="view">
                 <p>Luợt xem: <span>${item.view}</span></p>
               </div>                                                           
+            </div>
             </div>
           </div>
         `;

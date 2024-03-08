@@ -74,6 +74,9 @@ header input::placeholder {
     padding: 10px 0;
 }
 
+.bar-menu {
+    display: none;
+}
 /* FOOTER  */
 footer {
     background: #333;
