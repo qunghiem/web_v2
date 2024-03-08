@@ -1,7 +1,6 @@
 import { IncreaseView, getQueryParams } from "./Const.js";
 const URL="http://54.254.135.110"
 
-
 const novelName=getQueryParams().name;
 async function fetchDataAndRender() {
   const item = getQueryParams();
