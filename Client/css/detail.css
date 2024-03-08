@@ -159,3 +159,63 @@ iframe {
 #list-chapter li {
     padding: 2px !important;
 }
+
+/* RESPONSIVE  */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+    .bar-menu {
+        margin-left: 15px;
+    }
+    .inner-content {
+        flex-wrap: wrap;
+    }
+    .inner-content .detail {
+        order: 2;
+        width: 110%;
+    }
+    .inner-content .list-type-novel {
+        order: 1;
+        width: 100%;
+        /* margin-left: -15px; */
+        margin-right: 0;
+        padding-right: -115px;
+    }
+    .inner-content .detail {
+        padding: 0 15px;
+        margin-top: 0;
+    }
+    img {
+        width: 100px;
+        height: 160px;
+    }
+    .inner-content .detail-content h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .inner-content .detail-content button {
+        padding: 10px;
+        font-size: 14px;
+        display: inline-block;
+    }
+    .rate a {
+        font-size: 10px;
+        margin-right: 10px;
+        padding: 0.2rem 0.8rem;
+    }
+    .detail-bottom ul li a{
+        font-size: 12px;
+    }
+    
+
+
+}
+
+
+
+
+
+/* RESPONSIVE  */
