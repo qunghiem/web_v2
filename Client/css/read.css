@@ -49,6 +49,7 @@
     background-color: var(--bg-two);
 
 }
+
 .fa-left-long {
     margin-right: 5px;
 }
@@ -56,4 +57,39 @@
 .fa-right-long {
     margin-left: 5px;
 }
+
+
 /* MỚI THÊM  */
+
+
+/* THÊM NGÀY 8/3 */
+#list-chapter {
+    list-style: disc;
+    margin-left: 20px;
+    color: var(--color-header);
+    display: none; 
+}
+   
+
+#list-chapter li a {
+    font-size: 18px;
+    color: var(--color-header);
+}
+
+#list-chapter li a:hover {
+    color: black;
+}
+
+#content-chapter {
+    overflow: hidden;
+}
+
+#content-chapter iframe {
+    transform: scale(1.2);
+}
+
+.inner-content #chapter-name h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* THÊM NGÀY 8/3 */

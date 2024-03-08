@@ -145,7 +145,7 @@ iframe {
     flex-direction: column;
     margin-left: 20px;
     list-style-type: disc;
-    /* display: none; */
+    display: none;
 }
 
 #list-chapter li:hover a{

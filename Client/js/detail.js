@@ -74,7 +74,7 @@ function renderHTML(item, listChapter) {
   <div class="detail-bottom">
     <ul>
       <li class="desc dont-need"><a>GIỚI THIỆU</a></li>
-      <li class="list-chapter-1 need" onclick="hamNone()"><a>DANH SÁCH CHƯƠNG</a>
+      <li class="list-chapter-1 need" onclick=""><a>DANH SÁCH CHƯƠNG</a>
       </li>
       <li class="cmt need"><a>BÌNH LUẬN</a></li>
     </ul>
