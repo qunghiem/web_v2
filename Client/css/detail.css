@@ -187,9 +187,13 @@ iframe {
         padding: 0 15px;
         margin-top: 0;
     }
-    img {
+    .detail-top img {
         width: 100px;
         height: 160px;
+    }
+    .logo img {
+        width: 100px;
+        height: auto;
     }
     .inner-content .detail-content h3 {
         font-size: 15px;

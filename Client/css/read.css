@@ -67,9 +67,9 @@
     list-style: disc;
     margin-left: 20px;
     color: var(--color-header);
-    display: none; 
+    display: none;
 }
-   
+
 
 #list-chapter li a {
     font-size: 18px;
@@ -88,8 +88,66 @@
     transform: scale(1.2);
 }
 
+
+
 .inner-content #chapter-name h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* RESPONSIVE  */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .inner-content {
+        flex-wrap: wrap;
+    }
+
+    .inner-content .read {
+        order: 2;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .inner-content .list-type-novel {
+        order: 1;
+        width: 100%;
+    }
+
+    .inner-content #chapter-name h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bar-menu {
+        margin-left: 15px;
+    }
+    
+    .inner-content .list-type-novel .category h3, 
+    .inner-content .list-type-novel .top__view h3 {
+        font-size: 10px;
+    }
+
+    .inner-content .nav-chapter .next,
+    .inner-content .nav-chapter .return {
+        padding: 6px 6px;     
+        font-size: 10px;
+
+    }
+
+    .inner-content .nav-chapter .next span,
+    .inner-content .nav-chapter .return span {
+        /* font-size: 10px; */
+    }
+}
+/* RESPONSIVE  */
+
+
+
+
+
 /* THÊM NGÀY 8/3 */
