@@ -5,6 +5,7 @@ const URL = "http://54.254.135.110";
 async function fetchDataAndRender() {
   try {
     const queryParams = getQueryParams();
+    document.title = queryParams.name;
     const novelCode = queryParams.novelCode;
 
     const [_, listChapter] = await Promise.all([

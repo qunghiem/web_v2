@@ -53,12 +53,14 @@ const toggleListChapterVisibility = () => {
 
 if (queryParams.chapterContent) {
   renderNameChapter(queryParams.chapterName);
+  document.title = queryParams.chapterName;
   changeTitle(queryParams.chapterName);
   renderContentChapter(queryParams.chapterContent);
   getListChapter().then((data) => listChapterHTML(data));
 } else {
   getListChapter().then((data) => {
     renderNameChapter(data[0].chapterName);
+    document.title = data[0].chapterName;
     changeTitle(data[0].chapterName);
     renderContentChapter(data[0].contentURL);
     listChapterHTML(data);
