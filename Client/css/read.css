@@ -63,7 +63,11 @@
 
 
 /* THÊM NGÀY 8/3 */
+.list-chapter{
+    position: relative;
+}
 #list-chapter {
+
     list-style: disc;
     margin-left: 20px;
     color: var(--color-header);
@@ -93,6 +97,37 @@
 .inner-content #chapter-name h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#list-chapter {
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#list-chapter li {
+    list-style-type: none;
+}
+
+#list-chapter li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+}
+
+#list-chapter li a:hover {
+    background-color: #f0f0f0;
 }
 
 /* RESPONSIVE  */
@@ -126,15 +161,15 @@
     .bar-menu {
         margin-left: 15px;
     }
-    
-    .inner-content .list-type-novel .category h3, 
+
+    .inner-content .list-type-novel .category h3,
     .inner-content .list-type-novel .top__view h3 {
         font-size: 10px;
     }
 
     .inner-content .nav-chapter .next,
     .inner-content .nav-chapter .return {
-        padding: 6px 6px;     
+        padding: 6px 6px;
         font-size: 10px;
 
     }
@@ -144,6 +179,7 @@
         /* font-size: 10px; */
     }
 }
+
 /* RESPONSIVE  */
 
 

@@ -141,19 +141,31 @@ iframe {
 /* XỬ LÍ DISPLAY NONE #LIST-CHAPTER */ 
 
 #list-chapter {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    list-style-type: disc;
     display: none;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
 }
 
-#list-chapter li:hover a{
-    color: black;
+#list-chapter li {
+    list-style-type: none;
 }
-#list-chapter a {
-    color: #19459e;
-    font-size: 17px;
+
+#list-chapter li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+}
+
+#list-chapter li a:hover {
+    background-color: #f0f0f0;
 }
 
 #list-chapter li {
